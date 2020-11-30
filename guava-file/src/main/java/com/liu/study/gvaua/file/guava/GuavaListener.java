@@ -19,7 +19,7 @@ public class GuavaListener {
      */
     @Subscribe
     public void subscribe(GuavaEvent event) {
-        System.out.println(event.toString());
+        System.out.println("subscribe：       " + event.toString());
     }
 
     /**
@@ -38,7 +38,7 @@ public class GuavaListener {
      */
     @Subscribe
     public void subscribeAnother1(GuavaEvent event) {
-        System.out.println(event.toString());
+        System.out.println("subscribeAnother1：      " + event.toString());
     }
 
     /**
@@ -48,7 +48,7 @@ public class GuavaListener {
      */
     @Subscribe
     public void subscribeSecond(GuavaSecondEvent event) {
-        System.out.println(event.toString());
+        System.out.println("subscribeSecond：       " + event.toString());
     }
 
 }
