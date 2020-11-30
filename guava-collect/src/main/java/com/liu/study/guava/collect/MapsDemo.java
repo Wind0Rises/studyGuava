@@ -10,7 +10,7 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 /**
- *
+ * Guava中的Map工具类。
  *
  * @author Liuweian
  * @createTime 2020/8/20 21:59
@@ -22,8 +22,10 @@ public class MapsDemo {
         Converter<Object, Object> objectObjectConverter = Maps.asConverter(HashBiMap.create());
         System.out.println(objectObjectConverter);
 
+        /**
+         *
+         */
         Set<String> collect = IntStream.range(0, 10).filter(item -> item > 0).mapToObj(item -> String.valueOf(item)).collect(Collectors.toSet());
-        //IntStream.range(0, 10).collect()
         System.out.println(collect);
 
     }

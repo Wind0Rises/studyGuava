@@ -12,6 +12,8 @@ import java.util.stream.IntStream;
 import static java.lang.Thread.currentThread;
 
 /**
+ * 滴桶算法。
+ *
  * @author lwa
  * @version 1.0.0
  * @createTime 2020/8/14 11:19
