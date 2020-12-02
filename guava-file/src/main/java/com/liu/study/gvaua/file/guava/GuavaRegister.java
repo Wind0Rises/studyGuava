@@ -29,7 +29,6 @@ public class GuavaRegister {
         /**
          * 注册这个listener所有的订阅方法（被@Subscribe注解修饰的）
          * 并根据@Subscribe修饰的方法的参数分组。也就是根据事件进行分组。
-         *
          */
         getEventBus().register(listener);
     }

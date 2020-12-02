@@ -3,7 +3,7 @@ package com.liu.study.gvaua.file.guava;
 import com.google.common.eventbus.Subscribe;
 
 /**
- * 一个@Subscribe修饰的方法，代表一个订阅。
+ * 一个{@link Subscribe}修饰的方法，代表一个订阅，{@link Subscribe}修饰的方法只能有一个参数。
  *
  *
  * @author lwa
@@ -13,8 +13,7 @@ import com.google.common.eventbus.Subscribe;
 public class GuavaListener {
 
     /**
-     *
-     * 只有一个参数。
+     * 订阅一
      * @param event
      */
     @Subscribe
@@ -23,7 +22,7 @@ public class GuavaListener {
     }
 
     /**
-     * 只有一个参数。
+     * 订阅二
      * @param event
      */
     @Subscribe
@@ -33,7 +32,7 @@ public class GuavaListener {
     }
 
     /**
-     * 只有一个参数。
+     * 订阅三
      * @param event
      */
     @Subscribe

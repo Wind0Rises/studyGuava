@@ -37,8 +37,4 @@ public class GuavaTest {
         eventBus.post(new GuavaSecondEvent("zhangsan"));
     }
 
-    public static void test(EventBus eventBus) {
-        // eventBus.unregister();
-    }
-
 }

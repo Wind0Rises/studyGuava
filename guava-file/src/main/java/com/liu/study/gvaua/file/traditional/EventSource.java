@@ -6,7 +6,7 @@ import java.util.EventObject;
 import java.util.List;
 
 /**
- * 传统java程序--时间源。
+ * 传统java程序--事件源。
  *
  * 向事件源中添加事件监听器--监听事件源。
  * 时间源达到某个条件触发事件。

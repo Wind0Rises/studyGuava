@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
+ * 【事件】--》用于{@link com.google.common.eventbus.Subscribe}修饰的方法传递参数。
  *
  *
  * @author lwa
