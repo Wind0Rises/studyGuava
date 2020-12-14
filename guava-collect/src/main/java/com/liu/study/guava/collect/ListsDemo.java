@@ -5,6 +5,7 @@ import com.google.common.collect.Lists;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.stream.Collectors;
 
 /**
  * Lists测试。
@@ -16,6 +17,17 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class ListsDemo {
 
     public static void main(String[] args) {
+        // 01、第一次测试
+        // firstTest();
+
+        // 02、
+        testGroupingBy();
+    }
+
+    /**
+     * 第一次测试。
+     */
+    public static void firstTest() {
         /**
          * 创建一个不可变的List。
          */
@@ -70,6 +82,22 @@ public class ListsDemo {
         System.out.println(reverse);
         Collections.reverse(reverse);
         System.out.println(reverse);
+    }
+
+    /**
+     *
+     */
+    public static void testGroupingBy() {
+       List<String> list = new ArrayList<>();
+       list.add("1");
+       list.add("2");
+       list.add("3");
+       list.add("2");
+       list.add("2");
+       list.add("3");
+
+        Map<String, Long> collect = list.stream().collect(Collectors.groupingBy(item -> item, Collectors.counting()));
+        System.out.println(collect);
     }
 
 }
