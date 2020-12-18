@@ -20,8 +20,7 @@ public class ListsDemo {
         // 01、第一次测试
         // firstTest();
 
-        // 02、
-        testGroupingBy();
+
     }
 
     /**
@@ -84,20 +83,5 @@ public class ListsDemo {
         System.out.println(reverse);
     }
 
-    /**
-     *
-     */
-    public static void testGroupingBy() {
-       List<String> list = new ArrayList<>();
-       list.add("1");
-       list.add("2");
-       list.add("3");
-       list.add("2");
-       list.add("2");
-       list.add("3");
-
-        Map<String, Long> collect = list.stream().collect(Collectors.groupingBy(item -> item, Collectors.counting()));
-        System.out.println(collect);
-    }
 
 }
