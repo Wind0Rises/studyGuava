@@ -18,7 +18,7 @@
 		<module>guava-cache</module>
 		<module>guava-collect</module>
 		<module>guava-parent</module>
-		<module>guava-file</module>
+		<module>guava-evenbus</module>
         <module>guava-concurrent</module>
     </modules>
 </project>
