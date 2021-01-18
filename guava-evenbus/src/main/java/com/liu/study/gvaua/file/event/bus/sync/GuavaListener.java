@@ -1,4 +1,4 @@
-package com.liu.study.gvaua.file.guava;
+package com.liu.study.gvaua.file.event.bus.sync;
 
 import com.google.common.eventbus.Subscribe;
 
@@ -22,22 +22,32 @@ public class GuavaListener {
     }
 
     /**
-     * 订阅二
-     * @param event
-     */
-    @Subscribe
-    public void subscribeAnother(GuavaEvent event) {
-        System.out.println(event.toString());
-        throw new RuntimeException("----------");
-    }
-
-    /**
      * 订阅三
      * @param event
      */
     @Subscribe
     public void subscribeAnother1(GuavaEvent event) {
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         System.out.println("subscribeAnother1：      " + event.toString());
+    }
+
+    /**
+     * 订阅二
+     * @param event
+     */
+    @Subscribe
+    public void subscribeAnother(GuavaEvent event) {
+        System.out.println("subscribeAnother：" + event.toString());
+        try {
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        throw new RuntimeException("----------");
     }
 
     /**

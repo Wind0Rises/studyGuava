@@ -1,4 +1,4 @@
-package com.liu.study.gvaua.file.guava;
+package com.liu.study.gvaua.file.event.bus.sync;
 
 import com.google.common.eventbus.EventBus;
 

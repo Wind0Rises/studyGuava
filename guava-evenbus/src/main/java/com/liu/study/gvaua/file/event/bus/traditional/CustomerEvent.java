@@ -1,4 +1,4 @@
-package com.liu.study.gvaua.file.traditional;
+package com.liu.study.gvaua.file.event.bus.traditional;
 
 import java.util.EventObject;
 
